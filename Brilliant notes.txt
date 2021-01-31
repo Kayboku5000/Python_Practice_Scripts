@@ -1,0 +1,18 @@
+brilliant notes
+
+Eulerian geometry
+
+If a ggraph has more than 2 vertices with an odd number of paths, there
+is no eulerian path available. 
+The vertices where odd number paths occur, must be the start and stop points. 
+That's an example of the real power and magic of computer science: 
+taking an intractable problem and making it tractable by understanding its structure.
+
+When you solve a concrete problem, 
+by understanding a more general problem (like Eulerian paths in graphs), y
+ou can apply that general understanding to other problems.
+
+if and else
+describe a test;
+list some instructions to run if the test succeeds;
+list other instructions to run if the test fails.
