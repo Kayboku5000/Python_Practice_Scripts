@@ -1,0 +1,27 @@
+A little vocabulary: commands such as forward, left, and color are called functions. The numbers (or colors) that follow them in parentheses are called arguments. (This is just a funny name, it has nothing to do with arguing.)
+
+For example, the line of code forward(200) can thus be described as such: the function forward is called with the argument 200.
+
+
+Important note: The function penup and pendown have no arguments, so we put nothing in their parentheses. But they still require an empty pair of parentheses to be called!
+penup   # this does nothing!
+penup() # this lifts up the pen
+
+
+
+This line is also indented, so we are still inside the piece of code that will be looped.
+
+The two lines inside this loop must be indented by the same amount. But Python only requires consistency. You can see this by changing both lines to be indented by 2 spaces! The program will still work.
+No more indentation! This marks the end of the for-loop.
+
+The commands forward(100) and left(45) will be repeated 5 times over. The for-loop
+for i in range(5):
+    forward(100)
+    left(45)
+
+
+Short side note regarding vocabulary: In a function definition, the contents of the brackets are called parameters, not arguments. It is a small but subtle distinction:
+def circle(radius): # here radius is a parameter
+circle(20) # here 20 is an argument
+
+
