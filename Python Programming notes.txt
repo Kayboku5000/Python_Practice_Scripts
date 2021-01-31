@@ -1,0 +1,312 @@
+Expressions
+
+
+
+Operators
+these are the mathmatical symbals 
++ - / * 
+** power
+% remainder
+ 
+
+Operator rules
+Parenthesis are 1st.
+Power
+Multiplication/ division are equal in order
+addition
+Left to right
+
+
+
+Conditional Execution
+
+if statements
+if the condition is met, the line of program will execute, 
+
+if the condition is not met, the line of program is skipped
+
+x = 5
+if x < 10:
+    print('smaller') #this condition is met, as 5 is smaller than 10, so "smaller" will be printed
+
+if x > 20:
+    print ('Bigger') #this condition is not met, so this line of code will be skipped
+
+print ('Finis') #the program will jump to this next line of code, and print "finis"
+
+
+Comparison Operators
+<	Less Than
+<=	Less than or equal too
+==	Equal to
+>= 	Greater than or equal too
+>	greater than
+!=	Not equal
+
+Boolean are true/ false, yes/ no
+
+
+INDENTING
+
+If you create an f statement, as long as you stay indented you stay in the if block
+indenting is used for "if" and "for" statements
+Using tabs for indent can confuse python, use 4 spaces instead
+
+double indents
+putting an if within an if
+if x = 5:
+	pprint (i)
+	if i > 2:
+		print #this is the double indent
+
+if else
+this runs by, if the first statement is true, the if line of code will run
+if the if statement is false, the else statement will run
+
+x = 4
+if x > 2 :
+	print ('bigger') #so in this instance, x is greater than 2, so bigger will print
+else : 
+	print ('Smaller') #if x was less than 2, this line of code would run
+
+
+elif else if
+
+This will check the first if statement, if it is true, the 1st line of code will run.
+If the 1st if statement is not true, it will check the elif statement, if that statement 
+is true, that statement will run, if it is false, it will move to checking the next statement. 
+If none are true, it will run the else statement. 
+
+x = 100
+if x < 2:
+    print ('small')
+elif x < 10:
+    print ('medium')
+else :
+    print ('large')
+print('all done')
+
+the order of them is important, because it will only run in order and go to the next line if it sees 
+a false.
+
+
+
+a variable created within a function, only exists for the life of the function. 
+
+def is used to create a function. 
+
+return 
+this is used to exit a function, once a return value is stated, the function will not ready any more 
+line of code within that function and return to the main program. 
+
+LOOPS AND ITERATION
+while loops. "while True"
+this will run while a statement has not yet met its target variable
+adding a "break" statement will exit the loop
+
+"continue" will make the program jump back up to the top of the loop
+
+While loops are considered "indefinite loops" as in they go for a while until a break hits or until 
+a value becomes "false"
+
+DEFINITE LOOPS
+a simple definite loop
+
+for i in [5, 4, 3, 2, 1] :
+	print(i)
+print('Blastoff')
+
+import time
+for i in [5, 4, 3, 2, 1]:
+    print(i)
+    time.sleep(1)
+print('Blastoff!')
+
+Writing a simple definite loop with strings
+
+import time
+friends = ['joe', 'glenn', 'sally']
+for friend in friends :
+    time.sleep(2)
+    print ('happy new Year:', friend)
+time.sleep(2)    
+print ('done!')
+	
+LOOP IDIOMS
+
+Loop Patterns
+
+FILTERING IN A LOOP
+
+print('Before')
+for value in [9, 41, 12, 3, 74, 15] :
+    if value > 20:
+        print('Large number', value)
+print('After')
+
+
+NONE type
+this is used to show you dont know what the first number will be. 
+This can be assigned to a variable, in order to capture the first number, regardless of weather it 
+is high or low, positive or negative
+
+IS is a new operaotr, which is similar to an equals sign
+implies "is the same as"
+IS NOT is also an operator
+
+LEN is also a function related to strings
+
+IN is is an iteration variable, it looks through all the values "in" the sequence
+
+for letter in 'banana':
+	print (letter)
+the IN would scan through the word seperately for each letter. 
+
+SLICING STRINGS
+
+s = 'Monty Python'
+print(s[0:4])
+mont
+
+it will print letters up to but not including the value, starting at zero. 
+
+s = 'Monty Python'
+print (s[ :2])
+Mo
+print (s[8: })
+thon
+print (s[:])
+monty python
+
+Using IN as an operator
+the in can be used to check to see if one string is in another string
+
+fruit = banana
+'n' in fruit
+true
+'m' in fruit
+false
+
+READING FILES
+
+OPEN()
+this opens a "handle" that allows you to get to the file you are lookign for, 
+it does not read data from the file. 
+
+\n indicates that you need to go to a new line. This is counted as a single charachter
+
+A text file has \n at the end of every line to indicate it is a new line
+.read(0 is to read the file
+
+
+PYTHON LISTS
+These are types of data structures
+Collection - allows us to put many values in a single variable
+this is a list example
+friends = [ 'joseph', 'glenn', 'sally']
+
+print([1, 24, 76])
+
+Lists can have multiiple constants
+strings, integers, floating point numbers
+print(['red', 24, 48.8])
+
+A list can have any element that is a python object, even another list
+print([red, [4, 5], 5.8])
+
+A list can be empty
+
+Lists are mutable, which means, they can be changed
+strings are immutable, which meant they cannot be changed, we must make a new string.
+
+numbers can be accessed within a list, by listing the number you want to access.
+lotto = [2, 4, 6, 7, 8]
+lotto[2] = 28
+print(lotto)
+[2, 4, 28, 7, 8]
+
+len() function, takes a list as aparameter and returns the number of elements in the list
+
+the range() function returns a list of numbers that range from zero to one less than the parameter
+print(range(4))
+
+Concatenating lists
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = a + b
+print(c)
+[1, 2, 3, 4, 5, 6]
+
+this creates a new list with all the variables included in order, it does not add the numbers together
+
+Lists can be sliced, (this will be the "up to but not including")
+c = [1, 2, 3, 4, 5, 6]
+t[1:3]
+[1, 2]
+
+list methods
+dir gives the directory
+
+Building a list from scratch
+When we create an empty list, then use the "append" method to add things to it
+
+stuff = list()
+stuff.append('book")
+stuff.append(99)
+print(stuff)
+
+Python provides 2 operators to check if an item is in a list
+in and not in
+they return a true or false value
+
+a list can be sorted using the "sort" value
+
+BUILT IN FUNCTIONS AND LISTS
+list()
+
+nums = [3, 41, 12, 9, 74, 15]
+print(len(nums))
+6
+print(max(nums))
+74
+print(min(nums))
+3
+print(sum(nums))
+154
+print(sum(nums)/ len(nums))
+25.6
+
+CONTINUE
+this will give the ability for the program to skip a certain type of number from within a function
+
+using a "guardian" is a line of code that sets a minimum for checking.
+ie. 
+
+
+Dictionaries
+dict()
+
+objects can be lablled and recalled at any time. 
+Lists index their entries based on the position in the list.
+
+purse = dict()
+purse['money'] = 12
+purse['candy'] = 3
+purse['tissues'] = 75
+print(purse)
+{'money': 12, 'tissues': 75, 'candy': 3}
+
+dictionaires are like lists except that they use keys instead of numbers to look up values
+
+get()
+
+tuples
+
+Regular Expressions
+
+Sockets in Python
+import sockets - sockets is a libraary
+
+pycharm
+
+
